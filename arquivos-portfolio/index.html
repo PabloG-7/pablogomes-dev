@@ -24,77 +24,73 @@
     <meta property="og:url" content="https://portfolio-dev-pablo.vercel.app/">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <a href="#home" class="logo">
-            <span class="logo-text">PabloG.Dev</span>
-            <div class="logo-dots">
-                <span class="dot dot-1"></span>
-                <span class="dot dot-2"></span>
-            </div>
-        </a>
+ <!-- Header -->
+<header>
+    <a href="#home" class="logo">
+        <img src="logopgdev.jpeg" alt="PabloG.Dev" class="logo-img">
+    </a>
 
-        <nav class="nav-menu">
-            <div class="nav-links-container">
-                <a href="#home" class="nav-link active">Início</a>
-                <a href="#about" class="nav-link">Sobre</a>
-                <a href="#projects" class="nav-link">Projetos</a>
-                <a href="#skills" class="nav-link">Habilidades</a>
-                <a href="#experience" class="nav-link">Experiência</a>
-                <a href="#contact" class="nav-link">Contato</a>
-            </div>
+    <nav class="nav-menu">
+        <div class="nav-links-container">
+            <a href="#home" class="nav-link active">Início</a>
+            <a href="#about" class="nav-link">Sobre</a>
+            <a href="#projects" class="nav-link">Projetos</a>
+            <a href="#skills" class="nav-link">Habilidades</a>
+            <a href="#experience" class="nav-link">Experiência</a>
+            <a href="#contact" class="nav-link">Contato</a>
+        </div>
 
-            <div class="nav-separator"></div>
+        <div class="nav-separator"></div>
 
-            <div class="nav-social">
-                <a href="https://github.com/PabloG-7" class="social-nav-btn github-btn" target="_blank" rel="noopener">
-                    <i class="fab fa-github"></i><span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/pablogomess/" class="social-nav-btn linkedin-btn" target="_blank" rel="noopener">
-                    <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
-                </a>
-            </div>
-        </nav>
+        <div class="nav-social">
+            <a href="https://github.com/PabloG-7" class="social-nav-btn github-btn" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i><span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/pablogomess/" class="social-nav-btn linkedin-btn" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
+            </a>
+        </div>
+    </nav>
 
-        <button class="menu-btn" type="button" aria-label="Abrir menu">
-            <i class="fas fa-bars"></i>
+    <button class="menu-btn" type="button" aria-label="Abrir menu">
+        <span class="menu-icon"></span>
+        <span class="menu-icon"></span>
+        <span class="menu-icon"></span>
+    </button>
+
+    <div class="progress-bar" id="progressBar"></div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-overlay"></div>
+<div class="mobile-menu">
+    <div class="mobile-header">
+        <span class="mobile-logo-text">PabloG.Dev</span>
+        <button class="mobile-close-btn" type="button" aria-label="Fechar menu">
+            <i class="fas fa-times"></i>
         </button>
-
-        <div class="progress-bar" id="progressBar"></div>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-overlay"></div>
-    <div class="mobile-menu">
-        <div class="mobile-header">
-            <div class="mobile-logo-container">
-                <img src="logopgdev.jpeg" alt="Logo" class="mobile-logo">
-            </div>
-            <button class="mobile-close-btn" type="button" aria-label="Fechar menu">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        
-        <div class="mobile-links">
-            <a href="#home" class="mobile-link"><i class="fas fa-home"></i> Início</a>
-            <a href="#about" class="mobile-link"><i class="fas fa-user"></i> Sobre</a>
-            <a href="#projects" class="mobile-link"><i class="fas fa-project-diagram"></i> Projetos</a>
-            <a href="#skills" class="mobile-link"><i class="fas fa-code"></i> Habilidades</a>
-            <a href="#experience" class="mobile-link"><i class="fas fa-briefcase"></i> Experiência</a>
-            <a href="#contact" class="mobile-link"><i class="fas fa-envelope"></i> Contato</a>
-        </div>
-        
-        <div class="mobile-social">
-            <a href="https://github.com/PabloG-7" class="mobile-social-link mobile-social-btn" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/pablogomess/" class="mobile-social-link mobile-social-btn" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin-in"></i>
-                <span>LinkedIn</span>
-            </a>
-        </div>
     </div>
+    
+    <div class="mobile-links">
+        <a href="#home" class="mobile-link"><i class="fas fa-home"></i> Início</a>
+        <a href="#about" class="mobile-link"><i class="fas fa-user"></i> Sobre</a>
+        <a href="#projects" class="mobile-link"><i class="fas fa-project-diagram"></i> Projetos</a>
+        <a href="#skills" class="mobile-link"><i class="fas fa-code"></i> Habilidades</a>
+        <a href="#experience" class="mobile-link"><i class="fas fa-briefcase"></i> Experiência</a>
+        <a href="#contact" class="mobile-link"><i class="fas fa-envelope"></i> Contato</a>
+    </div>
+    
+    <div class="mobile-social">
+        <a href="https://github.com/PabloG-7" class="mobile-social-link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/pablogomess/" class="mobile-social-link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+        </a>
+    </div>
+</div>
 
   <!-- Hero Section -->
 <section class="hero" id="home">
