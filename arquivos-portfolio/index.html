@@ -1306,6 +1306,19 @@
             margin-top: 2px;
             letter-spacing: 0.3px;
         }
+        
+        .project-card .body .project-context .badge {
+            display: inline-block;
+            background: var(--accent-soft);
+            color: var(--accent);
+            padding: 0 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-left: 4px;
+            border: 1px solid var(--accent);
+            font-size: 0.5rem;
+            letter-spacing: 0.5px;
+        }
 
         .project-card .body h3 {
             font-size: 1rem;
@@ -1469,6 +1482,13 @@
             color: var(--text-muted);
             font-weight: 300;
             margin-bottom: 8px;
+        }
+
+        .exp-card .company .exp-badge {
+            color: var(--accent);
+            font-weight: 500;
+            font-size: 0.6rem;
+            text-transform: uppercase;
         }
 
         .exp-card p {
@@ -2313,14 +2333,18 @@
             <p data-i18n="projects.desc">Trabalhos que refletem minha abordagem e qualidade técnica.</p>
         </div>
         <div class="projects-grid">
+            <!-- BNB Plaza - Cliente Real -->
             <div class="project-card">
                 <div class="image">
                     <img src="img-projetos/figma-bnbplaza.png" alt="BNB Plaza Property Management System" loading="lazy" />
                 </div>
                 <div class="body">
                     <div class="tag" data-i18n="projects.tag1">Sistema Web</div>
-                    <div class="project-context" data-i18n="projects.context1">Projeto Freelance</div>
-                    <h3>BNBPlaza</h3>
+                    <div class="project-context">
+                        <span data-i18n="projects.context1">Cliente</span>
+                        <span class="badge">Real</span>
+                    </div>
+                    <h3>BNB Plaza</h3>
                     <p data-i18n="projects.desc1">Sistema completo de gestão imobiliária (PMS) desenvolvido para uma empresa da Bolívia, com controle financeiro, gestão de propriedades, reservas, calendário de ocupação, autenticação de usuários e geração de relatórios automatizados.</p>
                     <div class="tech">
                         <span>React</span>
@@ -2334,15 +2358,19 @@
                 </div>
             </div>
 
+            <!-- Max Sorvetes - Landing Page / Cliente Real -->
             <div class="project-card">
                 <div class="image">
-                    <img src="img-projetos/figma-maxsorvetes.png" alt="Website institucional" loading="lazy" />
+                    <img src="img-projetos/figma-maxsorvetes.png" alt="Landing Page institucional" loading="lazy" />
                 </div>
                 <div class="body">
-                    <div class="tag" data-i18n="projects.tag2">Website</div>
-                    <div class="project-context" data-i18n="projects.context2">Cliente Real</div>
+                    <div class="tag" data-i18n="projects.tag2">Landing Page</div>
+                    <div class="project-context">
+                        <span data-i18n="projects.context2">Cliente</span>
+                        <span class="badge">Real</span>
+                    </div>
                     <h3>Max Sorvetes</h3>
-                    <p data-i18n="projects.desc2">Website desenvolvido para uma sorveteria, com cardápio digital, integração com Google Maps, design responsivo e foco em experiência do usuário.</p>
+                    <p data-i18n="projects.desc2">Landing page desenvolvida para uma sorveteria, com cardápio digital, integração com Google Maps, design responsivo e foco em experiência do usuário.</p>
                     <div class="tech">
                         <span>HTML5</span>
                         <span>CSS3</span>
@@ -2354,27 +2382,37 @@
                 </div>
             </div>
 
+            <!-- Dr. Fisio - Site Institucional / Cliente Real -->
             <div class="project-card">
                 <div class="image">
-                    <img src="img-projetos/figma-drbruno.png" alt="Landing page profissional" loading="lazy" />
+                    <img src="img-projetos/figma-drbruno.png" alt="Site institucional Dr. Fisio" loading="lazy" />
                 </div>
                 <div class="body">
-                    <div class="tag" data-i18n="projects.tag3">Case Study</div>
-                    <div class="project-context" data-i18n="projects.context3">Estudo de Caso</div>
-                    <h3>Dr. Bruno Ribeiro</h3>
-                    <p data-i18n="projects.desc3">Landing page desenvolvida como estudo de caso para um fisioterapeuta, com foco em conversão, SEO, design responsivo e experiência do usuário.</p>
+                    <div class="tag" data-i18n="projects.tag3">Site Institucional</div>
+                    <div class="project-context">
+                        <span data-i18n="projects.context3">Cliente</span>
+                        <span class="badge">Real</span>
+                    </div>
+                    <h3>Dr. Fisio</h3>
+                    <p data-i18n="projects.desc3">
+                        Site institucional desenvolvido para o Dr. Bruno Ribeiro Martins, com foco em presença digital, apresentação dos serviços, SEO local e captação de novos pacientes.
+                    </p>
                     <div class="tech">
                         <span>HTML5</span>
                         <span>CSS3</span>
                         <span>JavaScript</span>
                         <span>EmailJS</span>
+                        <span>SEO</span>
                     </div>
                     <div class="links">
-                        <a href="https://drfisiosaude.com.br/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://drfisiosaude.com.br/" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
+            <!-- PGFLOW -->
             <div class="project-card">
                 <div class="image">
                     <img src="img-projetos/figma-pgflow.png" alt="PGFLOW - Plataforma social" loading="lazy" />
@@ -2397,6 +2435,7 @@
                 </div>
             </div>
 
+            <!-- NEON MEMORY -->
             <div class="project-card">
                 <div class="image">
                     <img src="img-projetos/figma-neonmemory.png" alt="NEON MEMORY" loading="lazy" />
@@ -2418,6 +2457,7 @@
                 </div>
             </div>
 
+            <!-- PABLOG.DEV -->
             <div class="project-card">
                 <div class="image">
                     <img src="img-projetos/figma-pablogdev.png" alt="PABLOGDEV" loading="lazy" />
@@ -2495,10 +2535,26 @@
             <p data-i18n="exp.desc">Projetos reais que construíram minha carreira como desenvolvedor.</p>
         </div>
         <div class="exp-grid">
+            <!-- Dr. Fisio - Mais recente -->
+            <div class="exp-card">
+                <div class="date">Mar — Abr 2026</div>
+                <h3 data-i18n="exp.job_dr_title">Desenvolvedor Front-end</h3>
+                <div class="company">Dr. Fisio <span class="exp-badge">· Cliente</span></div>
+                <p data-i18n="exp.job_dr_desc">Desenvolvimento de site institucional para fisioterapeuta com foco em SEO local, captação de pacientes, design responsivo e integração com EmailJS.</p>
+                <div class="tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>EmailJS</span>
+                    <span>SEO</span>
+                </div>
+            </div>
+
+            <!-- BNB Plaza -->
             <div class="exp-card">
                 <div class="date">Jan — Fev 2026</div>
                 <h3 data-i18n="exp.job1_title">Desenvolvedor Front-end</h3>
-                <div class="company">BNBPlaza · Bolívia</div>
+                <div class="company">BNB Plaza · Bolívia <span class="exp-badge">· Cliente</span></div>
                 <p data-i18n="exp.job1_desc">Desenvolvimento de sistema completo de gestão imobiliária (PMS) com React e TypeScript. Dashboard financeiro, calendário de ocupações e relatórios em PDF.</p>
                 <div class="tags">
                     <span>React</span>
@@ -2508,11 +2564,12 @@
                 </div>
             </div>
 
+            <!-- Max Sorvetes -->
             <div class="exp-card">
                 <div class="date">2025</div>
                 <h3 data-i18n="exp.job2_title">Desenvolvedor Front-end</h3>
-                <div class="company">Max Sorvetes</div>
-                <p data-i18n="exp.job2_desc">Desenvolvimento de site institucional responsivo com cardápio digital, integração com Google Maps e foco em SEO e performance.</p>
+                <div class="company">Max Sorvetes <span class="exp-badge">· Cliente</span></div>
+                <p data-i18n="exp.job2_desc">Desenvolvimento de landing page institucional responsiva com cardápio digital, integração com Google Maps e foco em SEO e performance.</p>
                 <div class="tags">
                     <span>HTML5</span>
                     <span>CSS3</span>
@@ -2520,6 +2577,7 @@
                 </div>
             </div>
 
+            <!-- Acrilex -->
             <div class="exp-card">
                 <div class="date">Nov 2022 — Abr 2024</div>
                 <h3 data-i18n="exp.job3_title">Auxiliar de Embalagem</h3>
@@ -2527,6 +2585,7 @@
                 <p data-i18n="exp.job3_desc">Atuação nos setores de embalagem, expedição e massa. Desenvolvimento de habilidades como organização, atenção aos detalhes e trabalho em equipe.</p>
             </div>
 
+            <!-- Termomecanica -->
             <div class="exp-card">
                 <div class="date">Fev 2020 — Dez 2020</div>
                 <h3 data-i18n="exp.job4_title">Auxiliar de Escritório</h3>
@@ -2673,20 +2732,20 @@
                 'projects.title': 'Projetos',
                 'projects.desc': 'Trabalhos que refletem minha abordagem e qualidade técnica.',
                 'projects.tag1': 'Sistema Web',
-                'projects.tag2': 'Website',
-                'projects.tag3': 'Case Study',
+                'projects.tag2': 'Landing Page',
+                'projects.tag3': 'Site Institucional',
                 'projects.tag4': 'Full Stack',
                 'projects.tag5': 'Aplicação Web',
                 'projects.tag6': 'Portfólio',
-                'projects.context1': 'Projeto Freelance',
-                'projects.context2': 'Cliente Real',
-                'projects.context3': 'Estudo de Caso',
+                'projects.context1': 'Cliente',
+                'projects.context2': 'Cliente',
+                'projects.context3': 'Cliente',
                 'projects.context4': 'Projeto Pessoal',
                 'projects.context5': 'Projeto Pessoal',
                 'projects.context6': 'Marca Própria',
                 'projects.desc1': 'Sistema completo de gestão imobiliária (PMS) desenvolvido para uma empresa da Bolívia, com controle financeiro, gestão de propriedades, reservas, calendário de ocupação, autenticação de usuários e geração de relatórios automatizados.',
-                'projects.desc2': 'Website desenvolvido para uma sorveteria, com cardápio digital, integração com Google Maps, design responsivo e foco em experiência do usuário.',
-                'projects.desc3': 'Landing page desenvolvida como estudo de caso para um fisioterapeuta, com foco em conversão, SEO, design responsivo e experiência do usuário.',
+                'projects.desc2': 'Landing page desenvolvida para uma sorveteria, com cardápio digital, integração com Google Maps, design responsivo e foco em experiência do usuário.',
+                'projects.desc3': 'Site institucional desenvolvido para o Dr. Bruno Ribeiro Martins, com foco em presença digital, apresentação dos serviços, SEO local e captação de novos pacientes.',
                 'projects.desc4': 'Rede social Full Stack com autenticação JWT, gerenciamento de usuários, CRUD de publicações, upload de imagens e API desenvolvida em Node.js.',
                 'projects.desc5': 'Jogo da memória desenvolvido em React e TypeScript com partidas multiplayer, ranking online em tempo real, efeitos sonoros e integração com Supabase.',
                 'projects.desc6': 'Website desenvolvido para apresentar meus serviços, projetos e soluções em desenvolvimento web, com design moderno, alta performance e foco na experiência do usuário.',
@@ -2702,8 +2761,10 @@
                 'exp.desc': 'Projetos reais que construíram minha carreira como desenvolvedor.',
                 'exp.job1_title': 'Desenvolvedor Front-end',
                 'exp.job1_desc': 'Desenvolvimento de sistema completo de gestão imobiliária (PMS) com React e TypeScript. Dashboard financeiro, calendário de ocupações e relatórios em PDF.',
+                'exp.job_dr_title': 'Desenvolvedor Front-end',
+                'exp.job_dr_desc': 'Desenvolvimento de site institucional para fisioterapeuta com foco em SEO local, captação de pacientes, design responsivo e integração com EmailJS.',
                 'exp.job2_title': 'Desenvolvedor Front-end',
-                'exp.job2_desc': 'Desenvolvimento de site institucional responsivo com cardápio digital, integração com Google Maps e foco em SEO e performance.',
+                'exp.job2_desc': 'Desenvolvimento de landing page institucional responsiva com cardápio digital, integração com Google Maps e foco em SEO e performance.',
                 'exp.job3_title': 'Auxiliar de Embalagem',
                 'exp.job3_desc': 'Atuação nos setores de embalagem, expedição e massa. Desenvolvimento de habilidades como organização, atenção aos detalhes e trabalho em equipe.',
                 'exp.job4_title': 'Auxiliar de Escritório',
@@ -2778,20 +2839,20 @@
                 'projects.title': 'Proyectos',
                 'projects.desc': 'Trabajos que reflejan mi enfoque y calidad técnica.',
                 'projects.tag1': 'Sistema Web',
-                'projects.tag2': 'Website',
-                'projects.tag3': 'Case Study',
+                'projects.tag2': 'Landing Page',
+                'projects.tag3': 'Sitio Institucional',
                 'projects.tag4': 'Full Stack',
                 'projects.tag5': 'Aplicación Web',
                 'projects.tag6': 'Portafolio',
-                'projects.context1': 'Proyecto Freelance',
-                'projects.context2': 'Cliente Real',
-                'projects.context3': 'Estudio de Caso',
+                'projects.context1': 'Cliente',
+                'projects.context2': 'Cliente',
+                'projects.context3': 'Cliente',
                 'projects.context4': 'Proyecto Personal',
                 'projects.context5': 'Proyecto Personal',
                 'projects.context6': 'Marca Propia',
                 'projects.desc1': 'Sistema completo de gestión inmobiliaria (PMS) desarrollado para una empresa de Bolivia, con control financiero, gestión de propiedades, reservas, calendario de ocupación, autenticación de usuarios y generación de reportes automatizados.',
-                'projects.desc2': 'Website desarrollado para una heladería, con menú digital, integración con Google Maps, diseño responsivo y enfoque en experiencia de usuario.',
-                'projects.desc3': 'Landing page desarrollada como estudio de caso para un fisioterapeuta, con enfoque en conversión, SEO, diseño responsivo y experiencia del usuario.',
+                'projects.desc2': 'Landing page desarrollada para una heladería, con menú digital, integración con Google Maps, diseño responsivo y enfoque en experiencia de usuario.',
+                'projects.desc3': 'Sitio institucional desarrollado para el Dr. Bruno Ribeiro Martins, con enfoque en presencia digital, presentación de servicios, SEO local y captación de nuevos pacientes.',
                 'projects.desc4': 'Red social Full Stack con autenticación JWT, gestión de usuarios, CRUD de publicaciones, carga de imágenes y API desarrollada en Node.js.',
                 'projects.desc5': 'Juego de memoria desarrollado en React y TypeScript con partidas multijugador, ranking online en tiempo real, efectos de sonido e integración con Supabase.',
                 'projects.desc6': 'Website desarrollado para presentar mis servicios, proyectos y soluciones en desarrollo web, con diseño moderno, alto rendimiento y enfoque en la experiencia del usuario.',
@@ -2807,8 +2868,10 @@
                 'exp.desc': 'Proyectos reales que construyeron mi carrera como desarrollador.',
                 'exp.job1_title': 'Desarrollador Front-end',
                 'exp.job1_desc': 'Desarrollo de sistema completo de gestión inmobiliaria (PMS) con React y TypeScript. Dashboard financiero, calendario de ocupaciones y reportes en PDF.',
+                'exp.job_dr_title': 'Desarrollador Front-end',
+                'exp.job_dr_desc': 'Desarrollo de sitio institucional para fisioterapeuta con enfoque en SEO local, captación de pacientes, diseño responsivo e integración con EmailJS.',
                 'exp.job2_title': 'Desarrollador Front-end',
-                'exp.job2_desc': 'Desarrollo de sitio institucional responsivo con menú digital, integración con Google Maps y enfoque en SEO y rendimiento.',
+                'exp.job2_desc': 'Desarrollo de landing page institucional responsiva con menú digital, integración con Google Maps y enfoque en SEO y rendimiento.',
                 'exp.job3_title': 'Auxiliar de Embalaje',
                 'exp.job3_desc': 'Actuación en los sectores de embalaje, expedición y masa. Desarrollo de habilidades como organización, atención a los detalles y trabajo en equipo.',
                 'exp.job4_title': 'Auxiliar de Oficina',
@@ -2883,20 +2946,20 @@
                 'projects.title': 'Projects',
                 'projects.desc': 'Works that reflect my approach and technical quality.',
                 'projects.tag1': 'Web System',
-                'projects.tag2': 'Website',
-                'projects.tag3': 'Case Study',
+                'projects.tag2': 'Landing Page',
+                'projects.tag3': 'Institutional Site',
                 'projects.tag4': 'Full Stack',
                 'projects.tag5': 'Web Application',
                 'projects.tag6': 'Portfolio',
-                'projects.context1': 'Freelance Project',
-                'projects.context2': 'Real Client',
-                'projects.context3': 'Case Study',
+                'projects.context1': 'Client',
+                'projects.context2': 'Client',
+                'projects.context3': 'Client',
                 'projects.context4': 'Personal Project',
                 'projects.context5': 'Personal Project',
                 'projects.context6': 'Own Brand',
                 'projects.desc1': 'Complete property management system (PMS) developed for a company in Bolivia, with financial control, property management, reservations, occupancy calendar, user authentication and automated report generation.',
-                'projects.desc2': 'Website developed for an ice cream shop, with digital menu, Google Maps integration, responsive design and focus on user experience.',
-                'projects.desc3': 'Landing page developed as a case study for a physical therapist, focused on conversion, SEO, responsive design and user experience.',
+                'projects.desc2': 'Landing page developed for an ice cream shop, with digital menu, Google Maps integration, responsive design and focus on user experience.',
+                'projects.desc3': 'Institutional website developed for Dr. Bruno Ribeiro Martins, focused on digital presence, service presentation, local SEO and attracting new patients.',
                 'projects.desc4': 'Full Stack social network with JWT authentication, user management, CRUD posts, image upload and API developed in Node.js.',
                 'projects.desc5': 'Memory game developed in React and TypeScript with multiplayer matches, real-time online ranking, sound effects and Supabase integration.',
                 'projects.desc6': 'Website developed to present my services, projects and solutions in web development, with modern design, high performance and focus on user experience.',
@@ -2912,8 +2975,10 @@
                 'exp.desc': 'Real projects that built my career as a developer.',
                 'exp.job1_title': 'Front-end Developer',
                 'exp.job1_desc': 'Development of a complete property management system (PMS) with React and TypeScript. Financial dashboard, occupancy calendar and PDF reports.',
+                'exp.job_dr_title': 'Front-end Developer',
+                'exp.job_dr_desc': 'Development of an institutional website for a physical therapist focused on local SEO, patient acquisition, responsive design and EmailJS integration.',
                 'exp.job2_title': 'Front-end Developer',
-                'exp.job2_desc': 'Development of a responsive institutional website with digital menu, Google Maps integration and focus on SEO and performance.',
+                'exp.job2_desc': 'Development of a responsive institutional landing page with digital menu, Google Maps integration and focus on SEO and performance.',
                 'exp.job3_title': 'Packaging Assistant',
                 'exp.job3_desc': 'Work in packaging, shipping and production areas. Development of skills such as organization, attention to detail and teamwork.',
                 'exp.job4_title': 'Office Assistant',
